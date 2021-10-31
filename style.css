@@ -1,0 +1,383 @@
+* {
+  box-sizing: border-box;
+  font-family: "Fira Sans", sans-serif;
+}
+
+body {
+  margin: 0 auto;
+}
+/* navbar style strt */
+
+.nev_deading h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: white;
+}
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+h2 {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.a {
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+  bottom: 10px;
+}
+p {
+  font-size: 1.2rem;
+
+  text-align: justify;
+}
+
+.dotted_hr {
+  border: dotted 8px white;
+  border-bottom: none;
+  margin: 10px auto;
+  width: 150px;
+}
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+}
+
+[class*="col"] {
+  width: 100%;
+}
+
+.nevbar {
+  background-color: tomato;
+  text-align: center;
+}
+
+.nevbar_menu {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  justify-content: flex-end;
+}
+.nevbar_menu a {
+  background-color: white;
+  border-radius: 5px;
+  margin: 5px 5px;
+  padding: 10px;
+  text-decoration: none;
+}
+.nevbar_menu a:hover {
+  background-color: darkgray;
+}
+
+.nevbar::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* navbar style ends here */
+
+/* pfofile design strt from here  */
+.profile {
+  padding: 130px 10px;
+  position: relative;
+  text-align: center;
+}
+
+.profile .top_weather_icon {
+  position: absolute;
+  right: 60px;
+  top: 10px;
+  transition: transform 2s;
+}
+
+.profile .top_weather_icon:hover {
+  transform: rotate(360deg);
+}
+
+.profile_descrip h1 {
+  font-family: "Satisfy", cursive;
+  font-size: 5rem;
+}
+.profile_descrip p {
+  color: gray;
+  text-align: center;
+  width: 90%;
+  margin: 0px auto 20px auto;
+}
+
+.profile .botom_weather_icon {
+  position: absolute;
+  left: 60px;
+  bottom: 10px;
+  transition: transform 2s;
+}
+
+.profile .botom_weather_icon:hover {
+  transform: rotate(360deg);
+}
+.profile::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* profile design end from here  */
+
+/* about me start */
+.about_me {
+  background-color: tomato;
+  padding: 1% 7%;
+  color: white;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+.about_image img {
+  border: 5px solid white;
+  height: 220px;
+  width: 200px;
+  border-radius: 50%;
+}
+.about_me p {
+  text-align: center;
+}
+.about_me a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+}
+.about_hr {
+  border: 2px solid white;
+}
+
+.about_me::after {
+  clear: both;
+  display: table;
+  content: "";
+}
+/* about me ends here */
+
+/* professional experience start */
+.work_experiance {
+  padding: 2% 2%;
+}
+.card {
+  background-color: rgb(157, 238, 238);
+  border-radius: 5px;
+  padding: 10px;
+  height: 620px;
+}
+.card:hover {
+  background-color: rgb(238, 230, 157);
+  box-shadow: 0 5px 8px 5px black;
+}
+.card_icon {
+  margin-top: 20px;
+  text-align: center;
+}
+.round_img {
+  border: 5px solid white;
+  border-radius: 50%;
+  padding: 12px;
+}
+.card:hover .card_title h2 {
+  background-color: gray;
+  color: white;
+}
+.education {
+  padding: 2% 2%;
+}
+
+.skill_container li {
+  list-style: none;
+  font-size: large;
+  padding: 10px 5px;
+  position: relative;
+}
+.skill_container li::before {
+  content: "";
+  position: absolute;
+  top: calc(100% - 2px);
+  left: 30px;
+  background-color: rgb(172, 62, 62, 0.3);
+  width: 90%;
+  height: 10px;
+  border-radius: 1500px;
+}
+.skill_container li::after {
+  content: "";
+  position: absolute;
+  top: calc(100% - 2px);
+  left: 30px;
+  background-color: rgb(172, 62, 62, 1);
+  width: 0%;
+  height: 10px;
+  border-radius: 1500px;
+
+  animation-duration: 3s;
+  animation-delay: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+.skill {
+  padding: 2% 2%;
+}
+.skill_container li.html::after {
+  animation-name: html;
+}
+@keyframes html {
+  to {
+    width: 85%;
+  }
+}
+.skill_container li.css::after {
+  animation-name: css;
+}
+@keyframes css {
+  to {
+    width: 80%;
+  }
+}
+.skill_container li.boot::after {
+  animation-name: boot;
+}
+@keyframes boot {
+  to {
+    width: 83%;
+  }
+}
+.skill_container li.javascript::after {
+  animation-name: javascript;
+}
+@keyframes javascript {
+  to {
+    width: 75%;
+  }
+}
+.skill_container li.jquery::after {
+  animation-name: jquery;
+}
+@keyframes jquery {
+  to {
+    width: 78%;
+  }
+}
+.skill_container li.express::after {
+  animation-name: express;
+}
+@keyframes express {
+  to {
+    width: 82%;
+  }
+}
+.skill_container li.github::after {
+  animation-name: github;
+}
+@keyframes github {
+  to {
+    width: 70%;
+  }
+}
+.skill_container li.react::after {
+  animation-name: react;
+}
+@keyframes react {
+  to {
+    width: 55%;
+  }
+}
+.skill_container li.python::after {
+  animation-name: python;
+}
+@keyframes python {
+  to {
+    width: 65%;
+  }
+}
+
+.work_experiance::after {
+  clear: both;
+  display: table;
+  content: "";
+}
+
+/* professional experience end */
+
+/* achivement-contact start here  */
+.achivement_contact {
+  padding: 2% 7%;
+  background-color: tomato;
+  color: white;
+}
+.achivement {
+  padding: 2% 7%;
+}
+.contact {
+  padding: 2% 7%;
+  text-align: center;
+}
+.contact input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  resize: none;
+}
+.contact button {
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(35, 45, 54);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  margin: 10px;
+  font-size: large;
+}
+.contact_link {
+  text-align: center;
+}
+
+.media_butoon .btn {
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 30px;
+  padding: 10px;
+  margin: 5px;
+  width: 60px;
+  background-color: rgb(241, 231, 231);
+}
+.achivement_contact::after {
+  clear: both;
+  display: table;
+  content: "";
+}
+
+/* achivement-contact endes here  */
+
+/* footer strt here */
+.footer {
+  background-color: black;
+  text-align: center;
+  padding: 20px;
+  font-size: medium;
+}
+.footer a {
+  display: block;
+  text-decoration: none;
+  margin: 5px;
+  color: white;
+}
+
+.footer::after {
+  clear: both;
+  display: table;
+  content: "";
+}
+
+/* footetr end here */

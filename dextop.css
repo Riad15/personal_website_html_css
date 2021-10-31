@@ -1,0 +1,101 @@
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100;
+}
+
+.nev_logo {
+  text-align: left;
+}
+
+/* bavbar degine strt  */
+.nev_deading h1 {
+  text-align: right;
+  color: white;
+  text-align: center;
+}
+.nevbar_menu {
+  flex-direction: row;
+}
+/* navbar degine end  */
+
+/* profile design strt */
+.profile .top_weather_icon {
+  right: 100px;
+  width: 100px;
+
+  transition: width 2s;
+}
+
+.profile .top_weather_icon:hover {
+  width: 150px;
+}
+
+.profile_descrip p {
+  color: gray;
+  text-align: center;
+
+  width: 70%;
+}
+
+.profile .botom_weather_icon {
+  left: 100px;
+  width: 100px;
+  transition: width 2s;
+}
+
+.profile .botom_weather_icon:hover {
+  width: 150px;
+}
+
+/* profile design end */
+
+/* about me starts  */
+
+.about_me img {
+  margin-top: 120px;
+  height: 400px;
+  width: 350px;
+  border-radius: 5%;
+}
+/* about me ends */
+
+/* footer str */
+.footer_menu {
+  margin: 15px;
+}
+.footer_menu a {
+  display: inline;
+  margin: 10px;
+}
